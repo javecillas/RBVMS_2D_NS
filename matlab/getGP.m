@@ -1,0 +1,23 @@
+function [gaussPt] = getGP(nGP)
+%GETGP Summary of this function goes here
+%   Get Gauss point coordinates and weights
+
+if nGP == 1
+    point = [0 0 0];
+    weight = 8;
+    gaussPt = [point weight];
+elseif nGP == 2
+    point = [-1/sqrt(3) -1/sqrt(3) -1/sqrt(3);...
+             +1/sqrt(3) -1/sqrt(3) -1/sqrt(3);...
+             +1/sqrt(3) +1/sqrt(3) -1/sqrt(3);...
+             -1/sqrt(3) +1/sqrt(3) -1/sqrt(3);...
+             -1/sqrt(3) -1/sqrt(3) +1/sqrt(3);...
+             +1/sqrt(3) -1/sqrt(3) +1/sqrt(3);...
+             +1/sqrt(3) +1/sqrt(3) +1/sqrt(3);...
+             -1/sqrt(3) +1/sqrt(3) +1/sqrt(3)];
+    weight = [1 1 1 1 1 1 1 1]';
+    gaussPt = [point weight];
+end
+
+end
+
