@@ -2,8 +2,8 @@
 #define NODE_H
 
 #include <iostream>
-#include <vector>
 
+#include <vector>
 #include <array>
 
 class Node {
@@ -18,10 +18,11 @@ public:
   // Node coordiante
   std::array<double,2> coor;
   // Node global DOF
-  std::array<int,2> gDoF;
+  std::array<int,2> gDOF;
   // Flag
-  bool isDoFSet;
+  bool isDOFSet;
   bool hasDirBC;
+  // BC value
   double bcVal;
   int bcFlag;
 };
