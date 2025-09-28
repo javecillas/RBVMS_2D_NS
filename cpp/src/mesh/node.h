@@ -18,8 +18,8 @@ public:
   // Node coordiante
   std::array<double,2> coor;
   // Node global DOF
-  std::array<int,2> gDoF;
-  // Flags
+  std::array<int,2> gDOF;
+  // Flag
   bool isDoFSet;
   bool hasDirBC;
   int bcFlag;
