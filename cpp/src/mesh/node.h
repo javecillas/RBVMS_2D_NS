@@ -2,9 +2,9 @@
 #define NODE_H
 
 #include <iostream>
-#include <vector>
 
 #include <array>
+#include <vector>
 
 class Node {
 public:
@@ -19,11 +19,12 @@ public:
   std::array<double,2> coor;
   // Node global DOF
   std::array<int,2> gDoF;
-  // Flag
+  // Flags
   bool isDoFSet;
   bool hasDirBC;
-  double bcVal;
   int bcFlag;
+  // BC value
+  double bcVal;
 };
 
 #endif // NODE_H
