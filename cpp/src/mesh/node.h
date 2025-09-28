@@ -3,8 +3,8 @@
 
 #include <iostream>
 
-#include <vector>
 #include <array>
+#include <vector>
 
 class Node {
 public:
@@ -20,11 +20,11 @@ public:
   // Node global DOF
   std::array<int,2> gDOF;
   // Flag
-  bool isDOFSet;
+  bool isDoFSet;
   bool hasDirBC;
+  int bcFlag;
   // BC value
   double bcVal;
-  int bcFlag;
 };
 
 #endif // NODE_H
